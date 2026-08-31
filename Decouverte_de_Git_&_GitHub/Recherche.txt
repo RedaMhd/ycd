@@ -1,0 +1,18 @@
+C'est quoi Git ?
+
+   Git is a distributed version control system (VCS) used to track changes in files and manage different versions of a project. It helps developers work together, compare changes, create branches, and merge different versions of the code while reducing conflicts. Git also stores project history efficiently instead of creating a complete copy of the project for every version.
+
+C'est quoi GitHub ?
+
+   GitHub is an online platform that hosts Git repositories and allows developers to store, share, and collaborate on projects.
+
+Quelle est la différence entre Git et GitHub ?	
+
+   Git is the tool, while GitHub is an online platform that uses Git.
+
+À quoi servent commit, push et pull ?
+   
+    commit are the versions of our project, each commit has it writer and title/message that describe what we did update.
+    a push is the action that we do when we want to add our commits to an existing repository like in GitHub.
+    pull is the invers, when we run it, it get us the last version of the project
+ 
