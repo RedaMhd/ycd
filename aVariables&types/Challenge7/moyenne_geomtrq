@@ -1,0 +1,6 @@
+const pr = require('prompt-sync')();
+const a = parseFloat(pr('1er nombre :'));
+const b = parseFloat(pr('2eme nombre :'));
+const c = parseFloat(pr('3eme nombre :'));
+
+console.log(`Moyenne géométrique ${(a * b * c)**(1/3)}`);
