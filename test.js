@@ -10,7 +10,7 @@ for(let i = 0; i < 5; i++){
   }
   console.log(lin);
 } */
- 
+
 
 
 
@@ -43,12 +43,39 @@ for(let i = 0; i <= f; i++)
   console.log(lin);
 }  */
 
-  let lin = ""
+//   let lin = ""
 
-for (let i = 0; i <= 4; i++) {
-    lin = "G"
-    for (let j = 0; j <= 4; j++) { 
-        lin += 'a'
-    }
-    console.log(lin)
+// for (let i = 0; i <= 4; i++) {
+//     lin = "G"
+//     for (let j = 0; j <= 4; j++) { 
+//         lin += 'a'
+//     }
+//     console.log(lin)
+// }
+
+  
+// a = 1;
+// console.log(a)
+// if (true) {
+//   console.log(a)
+//   a = 3;
+//   if (true) {
+//     console.log(a)
+
+//     b = "b"
+//   }
+//   console.log(b)
+//   console.log(a)
+// }
+
+// console.log(b)
+
+
+function User(name, age)
+{
+  this.n = name;
+  this.j = age;
 }
+
+let reda = new User('mouh', 21);
+console.log(reda.n)
