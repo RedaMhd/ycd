@@ -7,16 +7,21 @@ function cllg(txt) {
     console.log(txt);
 }
 
+function afficher(){};
+function rechercher(){};
+function mettreAJour(){};
+function supprimer(){};
+function quitte(){};
 
 clr();
 let apprenants = [];
 let menu = {
-    1: 'ajouter',
-    2: 'afficher',
-    3: 'rechercher',
-    4: 'mettreAJour',
-    5: 'supprimer',
-    6: 'quitter'
+    1: ajouter,
+    2: afficher,
+    3: rechercher,
+    4: mettreAJour,
+    5: supprimer,
+    6: quitte
 }
 
 function f_menu() {
@@ -27,15 +32,19 @@ function f_menu() {
         clr();
         cllg('<====|>-- Menu --<|====>')
         for (i in menu) {
-            cllg(`Entrer ${i} pour ${menu[i]}!`)
+            cllg(`Entrer ${i} pour ${menu[i].name}!`)
         }
+
+        cllg(apprenants);
+
         choi = parseInt(pr('  Votre Choi => '))
         if (choi !== 0 && choi <= i) {
             if ("quitter" === menu[choi]) {
                 cllg(menu[choi]);
                 break;
             }
-            [choi]();
+            cllg(choi)
+            menu[choi]();
         }
     }
 }
@@ -62,15 +71,20 @@ function ajouter() {
     not = pr('Not : ');
 
     let is = isInAprn(pnom);
-    while (!is) {
+    while (is) {
         clr();
+        cllg('6 pour menu ...')
         cllg('Apprennats exist deja !');
         pnom = pr('New Prenom : ');
+        if(parseInt(pnom) === 6){
+            return f_menu();
+        }
         not = pr('Not : ');
         is = isInAprn(pnom);
     }
-
-
+    apprenants[apprenants.length] = new Apprenn(pnom, not);
+    return f_menu();
 }
-f_menu()
-cllg('')
+
+f_menu();
+
