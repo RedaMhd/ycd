@@ -6,11 +6,15 @@ let j = 0;
 
 while (str[i]) {
     if (str[i] == souStr[j]) {
-        while (souStr[j] == str[i + j]) {
+        while ((souStr[j] == str[i + j] && souStr[j])) {
             j++
         }
-        if ()
-    }
+        if(!souStr[j] || !str[j + i]){
+            console.log('trouvee');
+            
+        }else
+            i += j;
+    }else
+        i++;
 }
-
-n
+console.log('non')

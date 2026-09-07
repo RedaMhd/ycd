@@ -71,11 +71,53 @@ for(let i = 0; i <= f; i++)
 // console.log(b)
 
 
-function User(name, age)
-{
-  this.n = name;
-  this.j = age;
-}
+// function User(name, age)
+// {
+//   this.n = name;
+//   this.j = age;
+// }
 
-let reda = new User('mouh', 21);
-console.log(reda.n)
+// let reda = new User('mouh', 21);
+// console.log(reda.n)
+
+
+// let menu = {
+//     1 : "ajouter",
+//     2 : "afficher",
+//     3 : "rechercher",
+//     4 : "mettreAJour",
+//     5 : "supprimer",
+//     6 : "quitter"
+// }
+
+// for(let m in menu){
+//   console.log(menu[m])
+// }
+
+
+// =========================================
+
+
+// let note = [12,12,17,5,3,20,14,12,11];
+
+// function getMyn(ar){
+//   let somm = 0;
+//   let my;
+//   let i = 0;
+//   let newArr = [];
+//   ar.forEach(element => {
+//     somm += element;
+//     i += 1;
+//   });
+
+//   my = somm / i;
+//   ar.forEach(element => {
+//     if(element > my)
+//     {
+//       newArr.push(element)
+//     }
+//   });
+//   console.log(newArr + ' ' + my);
+
+// }
+// getMyn(note)
