@@ -121,3 +121,24 @@ for(let i = 0; i <= f; i++)
 
 // }
 // getMyn(note)
+
+
+
+
+function Student(name, age , not )
+{
+  this.name = name;
+  this.age = age;
+  this.not = not;
+}
+const nname = prompt("enter nome")
+const agee = prompt("enter age")
+const note = prompt("enter not")
+Student(nname, agee , note)
+//let yasin = new Student('yassine', '21', "20")
+
+console.log(yasin.name)
+console.log(yasin.not)
+console.log(yasin.age)
+
+console.log(yasin)
